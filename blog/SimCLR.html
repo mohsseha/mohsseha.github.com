@@ -1,0 +1,121 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>SimCLR: (almost) beating Supervised Learning </title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">All Posts</a>:<ul>
+<li><a href="/blog/management">Working in Teams</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/ML-Papers">Learning Machine Learning</a></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+<li><a href="/Presentations-n-code">Presentations-n-code</a></li>
+</ul>
+</li>
+</ul>
+<!-- Proposed new Outline: 
+- Blog
+    - Teams
+    - ML and AI
+    - Movies
+    - Software Engineering 
+- About 
+- Teaching
+    - Software engineering 
+    - Youtube?
+
+My online presence is a product of 
+# ML
+# Teaching
+# Academic
+# Movies & Books
+# Management 
+# Software Engineering 
+# Professional Talks? 
+# BAAI??
+-->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>SimCLR: (almost) beating Supervised Learning</h1>
+<p><figure class="figure1" data-title="SimCLR.png"><img alt="SimCLR.png" src="SimCLR.png" /><figcaption>SimCLR.png</figcaption></figure></p>
+<h2>Key Points:</h2>
+<ul>
+<li>Unsupervised Performance <strong>almost</strong> same as supvervised performance </li>
+<li>Unsupervised performance scales with more parameters</li>
+</ul>
+<h3>The paper:</h3>
+<p><a href="https://arxiv.org/pdf/2002.05709.pdf">Open PDF</a></p>
+<p><iframe src="https://arxiv.org/pdf/2002.05709.pdf" width="90%" height="500px"></iframe></p>
+
+<h3>Video:</h3>
+<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/APki8LmdJwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
+<h3>Blog Posts:</h3>
+<p><a href="https://amitness.com/2020/03/illustrated-simclr/">https://amitness.com/2020/03/illustrated-simclr/</a></p>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&larr; <a href="/blog/semi-sup.html">A Visual Guide For self-supervised methods in DL</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/blog/project-O.html">Managing Managers</a> &rarr;</p>
+	</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,128 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>AI & Traditional SAAS Businesses </title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">All Posts</a>:<ul>
+<li><a href="/blog/management">Working in Teams</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/ML-Papers">Learning Machine Learning</a></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+<li><a href="/Presentations-n-code">Presentations-n-code</a></li>
+</ul>
+</li>
+</ul>
+<!-- Proposed new Outline: 
+- Blog
+    - Teams
+    - ML and AI
+    - Movies
+    - Software Engineering 
+- About 
+- Teaching
+    - Software engineering 
+    - Youtube?
+
+My online presence is a product of 
+# ML
+# Teaching
+# Academic
+# Movies & Books
+# Management 
+# Software Engineering 
+# Professional Talks? 
+# BAAI??
+-->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>AI &amp; Traditional SAAS Businesses</h1>
+<p>I was talking to a freind (<a href="https://twitter.com/dillonrgardner">@dillonrgardner</a>) about this paper <a href="https://a16z.com/2020/02/16/the-new-business-of-ai-and-how-its-different-from-traditional-software/">a16z</a> about how software margins and how AI plays will be part of the eco system. '</p>
+<p>A few thoughts: 
+I buy the basic premise: AI/ML business don't scale as well as SAAS as a general rule. Things that reduce margins and scale:  </p>
+<ul>
+<li>Often, new customers bring in new corner cases which requires new training data and expensive training pipelines. </li>
+<li>Training Data is a messy ball of wax because you need to a) generate it b) build infrastructure to manager it c) label it in many cases </li>
+<li>For a lot of applications (eg. vision, more advanced NLP) there are realistically a small number of players that will give you SOTA performance. Meaning the FAANGS of the world have a natural advantage over smaller players. Take for example any recent CNN architecture is probably at least $1 million in cloud cost just to design the model (see section 5 of  <a href="https:  //arxiv.org/pdf/1912.05027.pdf">a recent example</a> and <a href="https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html">this</a> for more context). </li>
+<li><strong>NB</strong> Privacy laws and requirements can <em>substantially</em> affect the above costs and margins. </li>
+</ul>
+<p><figure class="figure1" data-title="NAS search"><img alt="NAS search" src="SAAS-AI.png" /><figcaption>NAS search</figcaption></figure></p>
+<p>One thing that I think is less important than what the article describes is the issue of inference and Moore's law effects: even in vision applications there are not that many DL models that are bottlenecked by processing power alone. The only exception to this is  in a safety critical space like driving where you need every. ounce. of. accuracy. </p>
+<h3>AI and software are not <em>that different</em> in one key aspect:</h3>
+<p>FTA: </p>
+<blockquote>
+<p>Handling this huge state space tends to be an ongoing chore. Since 
+the range of possible input values is so large, each new customer 
+deployment is likely to generate data that has never been seen 
+before.</p>
+</blockquote>
+<p>This is a key consideration when thinking about scaling an AI business: what applies for regular software applies ML: <strong>complexity kills</strong> and you are well-advised to reformulate your problem domain to severely limit possibilities of corner cases as much as possible. </p>
+<h4>PS: don't you just <em>hate</em> it when someone says AI when the mostly mean DL ? 😊</h4>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&larr; <a href="/blog/john_dies.html">Sometimes You Just Want a Burger 🍔</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/blog/Well.Said.html">Well Said</a> &rarr;</p>
+	</div>
+
+</body>
+
+
+</html>

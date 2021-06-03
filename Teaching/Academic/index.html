@@ -1,0 +1,116 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>PhD Work: Variance Reduction, Molecular Modeling and High Performance Computing: </title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">All Posts</a>:<ul>
+<li><a href="/blog/management">Working in Teams</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/ML-Papers">Learning Machine Learning</a></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+<li><a href="/Presentations-n-code">Presentations-n-code</a></li>
+</ul>
+</li>
+</ul>
+<!-- Proposed new Outline: 
+- Blog
+    - Teams
+    - ML and AI
+    - Movies
+    - Software Engineering 
+- About 
+- Teaching
+    - Software engineering 
+    - Youtube?
+
+My online presence is a product of 
+# ML
+# Teaching
+# Academic
+# Movies & Books
+# Management 
+# Software Engineering 
+# Professional Talks? 
+# BAAI??
+-->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>PhD Work: Variance Reduction, Molecular Modeling and High Performance Computing:</h1>
+<p>At MIT My work focused on microfluidic modeling. In particular worked on developing high performance computing methods to simulate gasses at a microscale for devices like <a href="https://en.wikipedia.org/wiki/Microelectromechanical_systems">this</a>: </p>
+<p><figure class="figure1" data-title="MEMS.jpg"><img alt="MEMS.jpg" src="MEMS.jpg" /><figcaption>MEMS.jpg</figcaption></figure></p>
+<p>A few useful links: </p>
+<ul>
+<li>Old Overview <a href="http://web.mit.edu/husain/www/">http://web.mit.edu/husain/www/</a></li>
+<li>GitHub Reference Implementation <a href="https://github.com/mohsseha/DSMCVR3D">https://github.com/mohsseha/DSMCVR3D</a></li>
+<li>A Good overview of the work is in the <a href="http://web.mit.edu/husain/www/Thesis.pdf">PhD Thesis</a></li>
+</ul>
+<p>A Semi-complete list of my publications on <a href="https://scholar.google.com/citations?user=CugFCugAAAAJ&amp;hl=en">Google Scholar</a></p>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&lt;&lt; <a href="/Teaching">Teaching</a>&lt;&lt; <a href="/Teaching/Academic">Academic</a></p>
+	</div>
+
+</body>
+
+
+</html>

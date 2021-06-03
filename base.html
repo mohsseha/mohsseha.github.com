@@ -1,0 +1,68 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>{{TITLE}}</title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			{{MENU}}
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			{{BODY}}
+		</section>
+	</article>
+
+	<div class="nav">
+		{{NAV}}
+	</div>
+
+</body>
+
+
+</html>

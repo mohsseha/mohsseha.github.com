@@ -1,0 +1,140 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>General</title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">All Posts</a>:<ul>
+<li><a href="/blog/management">Working in Teams</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/ML-Papers">Learning Machine Learning</a></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+<li><a href="/Presentations-n-code">Presentations-n-code</a></li>
+</ul>
+</li>
+</ul>
+<!-- Proposed new Outline: 
+- Blog
+    - Teams
+    - ML and AI
+    - Movies
+    - Software Engineering 
+- About 
+- Teaching
+    - Software engineering 
+    - Youtube?
+
+My online presence is a product of 
+# ML
+# Teaching
+# Academic
+# Movies & Books
+# Management 
+# Software Engineering 
+# Professional Talks? 
+# BAAI??
+-->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>General</h1>
+<ul>
+<li>
+<p><strong>Ethics</strong>: Should be something that's emphasized more in technical interviews. <a href="https://hiring.monster.com/employer-resources/recruiting-strategies/interviewing-candidates/interview-questions-to-ask-candidates/">This</a> is as good a place to start as any.</p>
+</li>
+<li>
+<p><strong>Prep</strong> there is no way around it even if it's stupid. <a href="https://interviewing.io/">interviewing.io</a> is a great resource.</p>
+</li>
+</ul>
+<h1>Programming:</h1>
+<p>Interview methods and prep is a decisive topic. On the one hand you want to make sure whoever you hire <a href="https://blog.codinghorror.com/why-cant-programmers-program/">knows how to program</a> at the same time, it can be argued that the <a href="http://www.crackingthecodinginterview.com/">standard white-boarding exterzise</a> is just hazing. You are not going to resolve this so you might as well prep:</p>
+<ul>
+<li>
+<p>Intermediate videos here</p>
+</li>
+<li>
+<p>The standard book: http://www.crackingthecodinginterview.com/ is a great resource if you stop fighting it.</p>
+</li>
+<li>
+<p>pretty good repo: https://github.com/labuladong/fucking-algorithm/tree/english</p>
+</li>
+<li>
+<p>an intresting reddit thread <a href="https://www.reddit.com/r/Python/comments/1knw7z/python_interview_questions/">python focused</a></p>
+</li>
+</ul>
+<p>I love this quote:</p>
+<blockquote>
+<p>you don't need to know algorithms with somone's name on it for an interview but there are few exceptions, 1. Dijkstra's 2. Kadane's 3. Bellman ford - negative edges</p>
+</blockquote>
+<ul>
+<li>there are a lot of sites that help with Coding prep <a href="https://leetcode.com">leetcode</a> seems to have a great reputation. </li>
+</ul>
+<h1>Machine Learning</h1>
+<p>A great reference is <a href="http://d2l.ai/">here</a></p>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&lt;&lt; <a href="/Teaching">Teaching</a>&lt;&lt; <a href="/Teaching/Interview-Prep">Interview-Prep</a></p>
+	</div>
+
+</body>
+
+
+</html>

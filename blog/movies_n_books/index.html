@@ -1,0 +1,122 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">All Posts</a>:<ul>
+<li><a href="/blog/management">Working in Teams</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/ML-Papers">Learning Machine Learning</a></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+<li><a href="/Presentations-n-code">Presentations-n-code</a></li>
+</ul>
+</li>
+</ul>
+<!-- Proposed new Outline: 
+- Blog
+    - Teams
+    - ML and AI
+    - Movies
+    - Software Engineering 
+- About 
+- Teaching
+    - Software engineering 
+    - Youtube?
+
+My online presence is a product of 
+# ML
+# Teaching
+# Academic
+# Movies & Books
+# Management 
+# Software Engineering 
+# Professional Talks? 
+# BAAI??
+-->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<p>
+    <label for="mn-figure-1" class="margin-toggle">⊕</label><input type="checkbox" id="mn-figure-1" class="margin-toggle">
+    <span class="marginnote">
+    <a class="twitter-timeline" data-width="220" href="https://twitter.com/husainAlmohssen?ref_src=twsrc%5Etfw">Tweets by husainAlmohssen</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>        
+    </span></p>
+
+<h2><a href="/blog/stalin.html">Death of Stalin &amp; Team Dynamics</a></h2>
+<p>Sun, Aug the 16th, 2020 <span class="sans">Tags: <a href="/blog/movies_n_books">movies_n_books</a>, <a href="/blog/management">management</a></span></p>
+<hr />
+<h2><a href="/blog/john_dies.html">Sometimes You Just Want a Burger 🍔</a></h2>
+<p>Sat, Jun the 20th, 2020 <span class="sans">Tags: <a href="/blog/movies_n_books">movies_n_books</a></span></p>
+<hr />
+<h2><a href="/blog/to-sell-is-human.html">To Sell is Human</a></h2>
+<p><figure class="figure1" data-title=" "><img alt=" " src="/blog/to_sell_is_human_book.jpg" /><figcaption> </figcaption></figure></p>
+<p>Mon, Jun the 1st, 2020 <span class="sans">Tags: <a href="/blog/movies_n_books">movies_n_books</a>, <a href="/blog/management">management</a></span></p>
+<hr />
+		</section>
+	</article>
+
+	<div class="nav">
+		
+	</div>
+
+</body>
+
+
+</html>
