@@ -1,0 +1,117 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Things that will help you become a software engineer</title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">Blog Posts</a>:<ul>
+<li><a href="/blog/management">Teams &amp; Management</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/DS_n_ML">Learning Machine Learning</a>
+ <!-- <a href="/implement_ME">BAAI</a>--></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+</ul>
+</li>
+</ul>
+<!-- https://drive.google.com/drive/folders/1InNTWdtHppKrp-D8I3i3ZnZPrd4XjEip?usp=sharing -->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>Things that will help you become a software engineer</h1>
+<ul>
+<li>This is not the same as getting a job. For the latter look at <a href="/Teaching/Interviews">interview prep</a></li>
+<li><a href="/blog/software_engineering">Blog</a> has a few articles that I hope are interesting </li>
+</ul>
+<p>I think Software Engineering is a slight mis-nomer at least from the perspective as someone who was trained and practiced being a "vanilla" mechanical engineer</p>
+<p>| software engineers| vanilla Engineers|
+|-------------------|------------------|
+| - intimate human-to-human interaction| - intermediate human-to-human interaction|
+| - deployment cost function flat | - deployment cost function dominating |
+| - personalities and engineer-to-engineer selling completely dominates the culture| </p>
+<p>I feel I can write a book about this topic, maybe one day I will |buissness constraints dominate|</p>
+<p>This is where I keep resouces for myself and my students. Broadly you will find: code, slides and links to online resouces. </p>
+<p>Focus is on: 
+- BAAI Meetup and Recent AI/ML Papers 
+    - index.md: 
+- Machine Learning and Data Science:
+    - index.md: Reference to GA class 
+    - ML-YouTube.md
+- Software Engineering 
+    - index.md: SE-YouTube.md 
+    - Conferences and Workshops Presentations-n-code
+- Tech Job Interviewing 
+- Academic work
+    - index.md: inline a few slides and thesis </p>
+<h1>Teaching And Training</h1>
+<p>Here is where I keep archives of presentation and resources that I think could be helpful to myself, or students. </p>
+<h3>ArchConf/NFJS Slides:</h3>
+<p><a href="https://drive.google.com/drive/folders/0B4pPV1rm5wHpa3lGSlZ5SzRHTGc">https://drive.google.com/drive/folders/0B4pPV1rm5wHpa3lGSlZ5SzRHTGc</a></p>
+<p>Github Code here: 
+<a href="https://github.com/mohsseha/ArchConfRML">https://github.com/mohsseha/ArchConfRML</a></p>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&lt;&lt; <a href="/Teaching">Teaching</a>&lt;&lt; <a href="/Teaching/SW">SW</a></p>
+	</div>
+
+</body>
+
+
+</html>

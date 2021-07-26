@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>TO DO ITEMS: </title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">Blog Posts</a>:<ul>
+<li><a href="/blog/management">Teams &amp; Management</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/DS_n_ML">Learning Machine Learning</a>
+ <!-- <a href="/implement_ME">BAAI</a>--></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+</ul>
+</li>
+</ul>
+<!-- https://drive.google.com/drive/folders/1InNTWdtHppKrp-D8I3i3ZnZPrd4XjEip?usp=sharing -->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>TO DO ITEMS:</h1>
+<h2>CV:</h2>
+<p>Good CV links: 
+<a href="https://amitness.com/2020/07/semi-supervised-learning/">https://amitness.com/2020/07/semi-supervised-learning/</a>
+<a href="https://slideslive.com/t/icml">https://slideslive.com/t/icml</a></p>
+<h3>Self Driving:</h3>
+<p><a href="https://gradientdescent.co">Good General Forum to discuss Self-driving cars</a></p>
+<p>MIT Course: 
+<a href="https://deeplearning.mit.edu/">https://deeplearning.mit.edu/</a></p>
+<p><a href="https://slideslive.com/38917690/multitask-learning-in-the-wilderness">https://slideslive.com/38917690/multitask-learning-in-the-wilderness</a>
+effcicient slides here: </p>
+<p>excellent blog: https://strangecosmos.substack.com</p>
+<p><a href="https://fullstackdeeplearning.com/">https://fullstackdeeplearning.com/</a>
+slides of course are here: 
+ - https://www.slideshare.net/sergeykarayev/testing-and-deployment-full-stack-deep-learning?next_slideshow=1</p>
+<p>Add specifics to my jobs, team size, specific deliverables (eg. patents, # of images ). Probably will be more clear once you go though the Amazon interview prep. </p>
+<h1>Depth/Width Tradeoffs in Neural Networks</h1>
+<p><figure class="figure1" data-title="Width.of.Layer.jpg"><img alt="Width.of.Layer.jpg" src="Width.of.Layer.jpg" /><figcaption>Width.of.Layer.jpg</figcaption></figure></p>
+<p><figure class="figure2" data-title="sufficiency.of.arch.jpg"><img alt="sufficiency.of.arch.jpg" src="sufficiency.of.arch.jpg" /><figcaption>sufficiency.of.arch.jpg</figcaption></figure></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/RYth6EbBUqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+<h2>dead links https://pypi.org/project/LinkChecker/</h2>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&lt;&lt; <a href="/private">private</a></p>
+	</div>
+
+</body>
+
+
+</html>

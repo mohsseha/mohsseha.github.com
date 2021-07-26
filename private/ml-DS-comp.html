@@ -1,0 +1,105 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Compensation For ML/DS:</title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">Blog Posts</a>:<ul>
+<li><a href="/blog/management">Teams &amp; Management</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/DS_n_ML">Learning Machine Learning</a>
+ <!-- <a href="/implement_ME">BAAI</a>--></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+</ul>
+</li>
+</ul>
+<!-- https://drive.google.com/drive/folders/1InNTWdtHppKrp-D8I3i3ZnZPrd4XjEip?usp=sharing -->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>Compensation For ML/DS:</h1>
+<p>Ah yes compensation, one of the hardest part of choosing and maintaining a job. Here are a few reference points (biased towards the Boston market): </p>
+<h2>FAANG:</h2>
+<p>hard to measure against depending on who you are hiring or where you are working but it implicitly affect the dynamics of your co-workers. </p>
+<p>Here are a few resources to get an estimate: 
+<a href="https://www.levels.fyi/?compare=Netflix,Apple,Amazon,Google,Facebook&amp;track=Software%20Engineer#">https://www.levels.fyi/?compare=Netflix,Apple,Amazon,Google,Facebook&amp;track=Software%20Engineer#</a></p>
+<p><em>Note</em>: </p>
+<ul>
+<li>This data is <em>almost certainly</em> baised. It's tricky to figure out in which direction. </li>
+<li>This is global, location makes a huge difference. </li>
+<li>Even not particularly fancy big companies can pay more than you expect: </li>
+<li><a href="https://www.levels.fyi/company/Walmart/salaries/">Walmart</a></li>
+<li><a href="https://www.levels.fyi/company/Wayfair/salaries/Software-Engineer/">Wayfair</a></li>
+</ul>
+<h2>Contracting:</h2>
+<p>I've seen this vary widely depending on the experiance and the speciality of the person you are working with. Expect to pay $75/hour for someone who is trying a new skill set and have you pay for it, up to well north of $200/hour for ex-microsoft/google engineers doing freelance work. </p>
+<p>Even on a place like upwork.com you can find people charging &gt;$400/hour for ML work (granted these are published specialists). </p>
+<h2>Entry positions:</h2>
+<p>From personal experiance I've seen $140k/year is practical minimum for someone with a related PhD if you are doing ML maybe slightly less if doing DS. </p>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&lt;&lt; <a href="/private">private</a></p>
+	</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,111 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title># DL Engineering Course: </title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">Blog Posts</a>:<ul>
+<li><a href="/blog/management">Teams &amp; Management</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/DS_n_ML">Learning Machine Learning</a>
+ <!-- <a href="/implement_ME">BAAI</a>--></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+</ul>
+</li>
+</ul>
+<!-- https://drive.google.com/drive/folders/1InNTWdtHppKrp-D8I3i3ZnZPrd4XjEip?usp=sharing -->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h2>DL Engineering Course:</h2>
+<p><a href="https://course.fullstackdeeplearning.com/">Full Stack Deep Learning</a> is a great practical course: </p>
+<ul>
+<li>Good focus on ML infrastructure issues. </li>
+<li>Has quite a few heavy hitters as contributors. </li>
+<li>Lots of practical pointers. Roughly lives <a href="https://github.com/full-stack-deep-learning/course-gitbook/blob/master/.gitbook/assets/image%20%282%29.png">here</a> compared to other sites</li>
+</ul>
+<h2>Fast.AI course:</h2>
+<p><a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527">https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527</a></p>
+<p>A Very pragmatic book: 
+<a href="https://github.com/fastai/fastbook">https://github.com/fastai/fastbook</a></p>
+<h1>More Advaced ML Topics:</h1>
+<p>I've always been a big fan of the MLSS <a href="http://www.mlss.cc/">(Machine Learning Summer School)</a> though they can be a bit too specialized. There are plenty of topic byond Deep Learning. Videos and slides available:</p>
+<ul>
+<li><a href="http://videolectures.net/site/search/?q=MLSS">video lectures</a></li>
+<li><a href="http://mlss.tuebingen.mpg.de/2020/schedule.html">2020 videos</a></li>
+<li>I find myself flipping back and forth between this and <a href="https://d2l.ai/">the Deep Dive Book</a></li>
+</ul>
+<h1>General Machine Learning</h1>
+<p><a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf">Bishop is a practical classic (esp. Graphical Methods)</a>: </p>
+<ul>
+<li>The book is widely taught at schools </li>
+<li>The YouTube lectures loosely associated with it are pretty good: </li>
+</ul>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/ju1Grt2hdko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&lt;&lt; <a href="/Teaching">Teaching</a>&lt;&lt; <a href="/Teaching/DS_n_ML">DS_n_ML</a></p>
+	</div>
+
+</body>
+
+
+</html>

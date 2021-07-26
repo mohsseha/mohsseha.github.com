@@ -1,0 +1,92 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Fun Bayesian Stats for ML</title>
+	<link rel="stylesheet" href="/css/tufte.min.css" />
+	<link rel="stylesheet" href="/css/drop-down.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631787-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175631787-1');
+	</script>
+
+</head>
+
+<body>
+	<!-- Navigation menu:-->
+
+	<div class="menu">
+		<h2><span class="newthought"><a href="/">Husain.io</a></span>
+			<span onclick="toggle(this)"><span id="plus">[+]</span><span id="minus" hidden="true">[-]</span></span>
+		</h2>
+		<div id="menu" class="nav-items" hidden="true">
+			<!--This optional File is used to allow the creation custom menu orders etc*/-->
+
+<ul>
+<li><a href="/blog">Blog Posts</a>:<ul>
+<li><a href="/blog/management">Teams &amp; Management</a></li>
+<li><a href="/blog/machine_learning">Machine Learning &amp; AI</a></li>
+<li><a href="/blog/software_engineering">Software Engineering</a></li>
+<li><a href="/blog/movies_n_books">Movies &amp; Books</a></li>
+</ul>
+</li>
+<li><a href="/About">About</a></li>
+<li><a href="/Teaching">Teaching &amp; Training</a><ul>
+<li><a href="/Teaching/DS_n_ML">Learning Machine Learning</a>
+ <!-- <a href="/implement_ME">BAAI</a>--></li>
+<li><a href="/Teaching/Academic">Academic</a></li>
+<li><a href="/Teaching/Interview-Prep">Interview-Prep</a></li>
+</ul>
+</li>
+</ul>
+<!-- https://drive.google.com/drive/folders/1InNTWdtHppKrp-D8I3i3ZnZPrd4XjEip?usp=sharing -->
+		</div>
+	</div>
+
+	<script>
+		function toggle(e) {
+    menu=document.getElementById("menu")
+    menu.hidden=!menu.hidden
+    plus=document.getElementById("plus")
+    plus.hidden=!plus.hidden
+    minus=document.getElementById("minus")
+    minus.hidden=!minus.hidden
+}
+
+function adjust_by_width(){
+if (window.innerWidth>600){toggle(this)}
+}
+
+window.onresize=adjust_by_width
+
+adjust_by_width()
+	</script>
+
+
+	<!-- Body of post/page -->
+	<article>
+		<section>
+			<h1>Fun Bayesian Stats for ML</h1>
+<p><figure class="figure1" data-title="Bayesian-statistics-the-fun-way.png"><img alt="Bayesian-statistics-the-fun-way.png" src="Bayesian-statistics-the-fun-way.png" /><figcaption>Bayesian-statistics-the-fun-way.png</figcaption></figure></p>
+<p>I'm always looking for alternative ways of explaining the most important ideas in ML for myself and <a href="/Teaching">my teammembers/students</a>. I came across this book by <a href="https://twitter.com/willkurt">@willkurt</a> that I think fits that need. </p>
+<p>The nice thing about this book is it is rigorous enough to not send you in the wrong direction once you mastered the topic and decide to dig deeper in the literature.</p>
+<p><a href="https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained">Here</a> is an example explaining the Kullback-Leibler Divergence a key concept when training CNNs. </p>
+<p>And <a href="https://www.amazon.com/Bayesian-Statistics-Fun-Will-Kurt/dp/1593279566">here</a> is a link to the Amazon listing of the book.  </p>
+		</section>
+	</article>
+
+	<div class="nav">
+		<p>&larr; <a href="/blog/margin-call.html">Margin Call</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/blog/Active-learning.html">Active Learning with Deep Learning </a> &rarr;</p>
+	</div>
+
+</body>
+
+
+</html>
